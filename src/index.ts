@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 mongoose
-  .connect("mongodb://localhost:27017/clean-architecture")
+  .connect("mongodb://admin:password@mongodb:27017/")
   .then(() => {
     console.log("Connected to MongoDB");
   })
